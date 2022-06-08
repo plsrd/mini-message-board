@@ -1,0 +1,20 @@
+<main class='mx-auto max-w-5xl p-5'>
+  <h1 class='normal-case text-3xl font-bold mb-4 ml-6'>Welcome!</h1>
+  <div
+    class='grid grid-cols-1 gap-3 p-2 sm:grid-cols-2 md:gap-6 md:p-6 lg:grid-cols-3 my-5'
+  >
+    {{#each messages}}
+      <div class='card bg-white shadow-xl'>
+        <div class='card-body'>
+          <h2 class='card-title'>{{this.user}}</h2>
+          <p class='text-primary text-sm'>{{this.added}}</p>
+          <p class=''>{{this.text}}</p>
+          <div class='card-actions justify-end'>
+            <button class='btn btn-primary'>Reply</button>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+  <a href='/new' class='btn max-w-md float-right mx-6 my-5'>Add new message</a>
+</main>
