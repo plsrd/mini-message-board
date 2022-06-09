@@ -5,8 +5,9 @@ const data = require('../src/data');
 
 const { messages } = data;
 
-hbs.registerHelper('count', () => {
-  return messages.filter(message => message.isNew).length;
+hbs.registerHelper('messageCount', () => {
+  const count = messages.filter(message => message.isNew).length;
+  return `${count} new message${count > 1 ? 's' : ''}`;
 });
 
 /* GET home page. */
