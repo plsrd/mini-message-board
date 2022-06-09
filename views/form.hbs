@@ -1,16 +1,33 @@
-<h1>{{title}}</h1>
-<form method='POST' action='/new'>
-  <label for='user'>
-    <input id='user' type='text' name='user' placeholder='Your name' />
+<form
+  method='POST'
+  action='/new'
+  class='card bg-white w-2/6 shadow-xl mx-auto my-20 flex flex-col h-auto p-10'
+>
+  <h1 class='text-lg font-bold py-5'>Post a new message</h1>
+  <label for='user' class='block pb-5'>
+    Name:
   </label>
-  <label for='text'>
-    <textarea
-      id='text'
-      type='text'
-      name='text'
-      placeholder='Your text'
-    ></textarea>
+  <input
+    id='user'
+    type='text'
+    name='user'
+    placeholder='Your name'
+    class='input input-bordered input-primary w-full'
+  />
+
+  <label for='text' class='block pt-8 pb-5'>
+    Message:
   </label>
-  <button type='submit' class='btn'>Send</button>
+  <textarea
+    id='text'
+    type='text'
+    name='text'
+    placeholder='Your text'
+    class='textarea textarea-bordered textarea-primary w-full'
+  ></textarea>
+
+  <button type='submit' class='btn mt-10'>Post</button>
 </form>
-<a href='/'>Back to home</a>
+<div class='w-fit mx-auto text-primary'>
+  <a href='/'>Back</a>
+</div>
