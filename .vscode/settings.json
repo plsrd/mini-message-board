@@ -1,0 +1,10 @@
+{
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        "match": "\\.hbs$",
+        "cmd": "npm run build:css"
+      }
+    ]
+  }
+}
