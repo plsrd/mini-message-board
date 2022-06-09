@@ -12,6 +12,10 @@ router.get('/new', function (req, res, next) {
 router.post('/new', (req, res) => {
   const { user, text } = req.body;
 
+  messages.forEach(
+    (message, i) => (messages[i] = { ...message, isNew: false })
+  );
+
   messages.unshift({ text, user, added: formatDate(new Date()), isNew: true });
 
   res.redirect('/');

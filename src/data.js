@@ -7,13 +7,13 @@ const messages = [
     text: 'Hello World!',
     user: 'Charles',
     added: formatDate(new Date()),
-    isNew: false,
+    isNew: true,
   },
   {
     text: 'Hi there!',
     user: 'Amando',
     added: formatDate(fns.subDays(new Date(), 1)),
-    isNew: false,
+    isNew: true,
   },
 ];
 
