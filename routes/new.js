@@ -16,7 +16,7 @@ router.post('/new', (req, res) => {
     (message, i) => (messages[i] = { ...message, isNew: false })
   );
 
-  messages.unshift({ text, user, added: formatDate(new Date()), isNew: true });
+  messages.unshift({ text, user, added: new Date(), isNew: true });
 
   res.redirect('/');
 });
