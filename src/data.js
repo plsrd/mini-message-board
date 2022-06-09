@@ -2,19 +2,30 @@ const fns = require('date-fns');
 
 const formatDate = date => fns.format(date, 'MMM d, yyyy');
 
-const messages = [
+const generateDate = () =>
+  fns.subDays(new Date(), Math.floor(Math.random() * 50));
+
+let messages = [
   {
     text: 'Hello World!',
     user: 'Charles',
-    added: formatDate(new Date()),
+    added: generateDate(),
     isNew: true,
   },
   {
     text: 'Hi there!',
     user: 'Amando',
-    added: formatDate(fns.subDays(new Date(), 1)),
+    added: generateDate(),
+    isNew: true,
+  },
+  {
+    text: 'Hi there!',
+    user: 'Amando',
+    added: generateDate(),
     isNew: true,
   },
 ];
+
+messages = messages.sort((a, b) => b.added - a.added);
 
 module.exports = { messages, formatDate };

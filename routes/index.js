@@ -10,6 +10,8 @@ hbs.registerHelper('messageCount', () => {
   return `${count} new message${count > 1 ? 's' : ''}`;
 });
 
+hbs.registerHelper('formatDate', date => data.formatDate(date));
+
 /* GET home page. */
 router.get('/', function (req, res, next) {
   res.render('index', {
