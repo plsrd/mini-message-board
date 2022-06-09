@@ -7,20 +7,26 @@ const generateDate = () =>
 
 let messages = [
   {
-    text: 'Hello World!',
-    user: 'Charles',
+    text: 'Stay close, do what I say and make as many mistakes as you want – just never the same one twice.',
+    user: 'Jack',
     added: generateDate(),
     isNew: true,
   },
   {
-    text: 'Hi there!',
-    user: 'Amando',
+    text: "Don't underestimate mediocrity... Lasting happiness, I've found, only really favors the unadventurous",
+    user: 'Aurora',
     added: generateDate(),
     isNew: true,
   },
   {
-    text: 'Hi there!',
-    user: 'Amando',
+    text: `We're all something we're not. Every one of us is stuck between the person we want to be and the person we can be. And there doesn't have to be a why.`,
+    user: 'Fodder',
+    added: generateDate(),
+    isNew: true,
+  },
+  {
+    text: `I’ve always been suspicious of game changers. Sometimes the game doesn’t need changing – or no one has a clear idea of which game will be changed, and for what and how much..`,
+    user: 'Lucy',
     added: generateDate(),
     isNew: true,
   },

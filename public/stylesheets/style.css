@@ -1678,11 +1678,6 @@ html {
   margin-bottom: 1rem;
 }
 
-.my-20 {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
-
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -1715,8 +1710,8 @@ html {
   height: 1.5rem;
 }
 
-.h-1\/2 {
-  height: 50%;
+.h-4\/6 {
+  height: 66.666667%;
 }
 
 .h-full {

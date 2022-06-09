@@ -15,7 +15,7 @@
       <span>{{messageCount}}</span>
     </div>
   </div>
-  <div class='h-1/2 overflow-scroll'>
+  <div class='h-4/6 overflow-scroll'>
     <div
       class='grid grid-cols-1 gap-3 p-2 sm:grid-cols-2 md:gap-6 md:p-6 lg:grid-cols-3'
     >
@@ -24,7 +24,7 @@
           <div class='card-body'>
             <h2 class='card-title'>{{this.user}}</h2>
             <p class='text-primary text-sm'>{{formatDate this.added}}</p>
-            <p class='my-4'>{{this.text}}</p>
+            <p class='my-4 text-sm'>{{this.text}}</p>
             {{#if isNew}}
               <div class='card-actions justify-between items-end'>
                 <div class='badge badge-info animate-pulse'>New</div>
@@ -35,5 +35,5 @@
       {{/each}}
     </div>
   </div>
-  <a href='/new' class='btn max-w-md float-right my-20'>+ New message</a>
+  <a href='/new' class='btn max-w-md float-right'>+ New message</a>
 </main>
