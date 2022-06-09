@@ -7,24 +7,33 @@
   <label for='user' class='block pb-5'>
     Name:
   </label>
+  {{#ifIn 'user' errors}}
+    <div class='text-red-500 text-sm italic'>Name must be at least 3 characters
+      long</div>
+  {{/ifIn}}
   <input
     id='user'
     type='text'
     name='user'
     placeholder='Your name'
     class='input input-bordered input-primary w-full'
+    value='{{user}}'
   />
 
   <label for='text' class='block pt-8 pb-5'>
     Message:
   </label>
+  {{#ifIn 'text' errors}}
+    <div class='text-red-500 text-sm italic'>Message must be between 10 and 150
+      characters</div>
+  {{/ifIn}}
   <textarea
     id='text'
     type='text'
     name='text'
     placeholder='Your text'
     class='textarea textarea-bordered textarea-primary w-full'
-  ></textarea>
+  >{{text}}</textarea>
 
   <button type='submit' class='btn mt-10'>Post</button>
 </form>

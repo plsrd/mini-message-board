@@ -1858,6 +1858,10 @@ html {
   overflow: scroll;
 }
 
+.break-words {
+  overflow-wrap: break-word;
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1934,6 +1938,15 @@ html {
 
 .normal-case {
   text-transform: none;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 .text-primary {
